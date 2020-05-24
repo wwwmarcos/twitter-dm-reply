@@ -1,9 +1,8 @@
 const { config: { TWITTER_AUTH, APP_PORT, BOT_ID } } = require('./config')
 const { crc } = require('./lib/crc')
-const { sendDirectMessage } = require('./lib/twitter')
 const bodyParser = require('body-parser')
 const express = require('express')
-
+const { handleAction } = require('./actions')
 const app = express()
 
 app.use(bodyParser.json())
@@ -35,18 +34,27 @@ app.post('/webhooks/twitter', async (req, res) => {
       return res.send('no direct messages events found')
     }
 
-    const results = events.map(event => {
-      const senderId = event.message_create.sender_id
+    const results = events
+      .filter(event => {
+        const containsQuickResponse = event.message_create.message_data.quick_reply_response
+        return containsQuickResponse
+      })
+      .map(async event => {
+        const senderId = event.message_create.sender_id
 
-      if (
-        event.type === 'message_create' &&
-        senderId !== BOT_ID
-      ) {
-        return sendDirectMessage({
-          recipientId: senderId
-        })
-      }
-    })
+        if (
+          event.type === 'message_create' &&
+          senderId !== BOT_ID
+        ) {
+          const quickResponse = event.message_create.message_data.quick_reply_response
+
+          return handleAction({
+            name: quickResponse.metadata,
+            senderId,
+            event
+          })
+        }
+      })
 
     await Promise.all(results)
   } catch (error) {
