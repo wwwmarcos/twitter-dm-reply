@@ -8,7 +8,11 @@ const config = {
     access_token_secret: process.env.TOKEN_SECRET
   },
   BOT_ID: process.env.BOT_ID,
-  APP_PORT: process.env.APP_PORT || 3000
+  APP_PORT: process.env.APP_PORT || 3000,
+  TELEGRAM: {
+    BOT_TOKEN: process.env.TELEGRAM_BOT_TOKEN,
+    CHAT_ID: process.env.TELEGRAM_CHAT_ID
+  }
 }
 
 module.exports = {
