@@ -1,15 +1,15 @@
 {
   "version": 2,
-  "name": "twitter-dm-reply",
-  "alias": [
-    "twitter-reply.now.sh"
-  ],
   "public": true,
   "builds": [
     {
       "src": "index.js",
       "use": "@now/node-server",
-      "config": {}
+      "config": {
+        "includeFiles": [
+          "**.nlp"
+        ]
+      }
     }
   ],
   "routes": [

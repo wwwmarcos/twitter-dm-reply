@@ -1,5 +1,5 @@
 {
-  "name": "twitter-dm-reply-webhook",
+  "name": "quebradinha",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,10 +10,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "akamaru": "^0.2.2",
     "axios": "^0.19.2",
     "body-parser": "^1.19.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "ioredis": "^4.17.3",
+    "mongoose": "^5.9.18",
     "request": "^2.88.2",
     "request-promise": "^4.2.5",
     "twitter-lite": "^0.11.0"

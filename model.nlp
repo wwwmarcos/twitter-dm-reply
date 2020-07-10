@@ -1,0 +1,1614 @@
+{
+  "settings": {
+    "languages": [
+      "pt"
+    ],
+    "tag": "nlp",
+    "threshold": 0.5,
+    "autoLoad": true,
+    "autoSave": true,
+    "modelFileName": "model.nlp"
+  },
+  "nluManager": {
+    "settings": {
+      "tag": "nlu-manager"
+    },
+    "locales": [
+      "pt"
+    ],
+    "languageNames": {},
+    "domainManagers": {
+      "pt": {
+        "settings": {
+          "locale": "pt",
+          "tag": "domain-manager-pt",
+          "nluByDomain": {
+            "default": {
+              "className": "NeuralNlu",
+              "settings": {}
+            }
+          },
+          "trainByDomain": false,
+          "useStemDict": true
+        },
+        "stemDict": {
+          "com,fal,gerent,o": {
+            "intent": "GERENTE",
+            "domain": "default"
+          },
+          "com,fal,human": {
+            "intent": "GERENTE",
+            "domain": "default"
+          },
+          "cham,pesso,uma": {
+            "intent": "GERENTE",
+            "domain": "default"
+          },
+          "ajud,de,precis": {
+            "intent": "GERENTE",
+            "domain": "default"
+          },
+          "com,fal,gerent,o,quer": {
+            "intent": "GERENTE",
+            "domain": "default"
+          },
+          "me,o,pass,picpay": {
+            "intent": "DOAR-DINHEIRO",
+            "domain": "default"
+          },
+          "pay,pic,tem,voc": {
+            "intent": "DOAR-DINHEIRO",
+            "domain": "default"
+          },
+          "mand,me,o,qrcod": {
+            "intent": "DOAR-DINHEIRO",
+            "domain": "default"
+          },
+          "benfeitor,da,link": {
+            "intent": "DOAR-DINHEIRO",
+            "domain": "default"
+          },
+          "com,dinheir,doar,fac,par": {
+            "intent": "DOAR-DINHEIRO",
+            "domain": "default"
+          },
+          "dinheir,doar,quer": {
+            "intent": "DOAR-DINHEIRO",
+            "domain": "default"
+          },
+          "picpay": {
+            "intent": "DOAR-DINHEIRO",
+            "domain": "default"
+          },
+          "dinheir": {
+            "intent": "DOAR-DINHEIRO",
+            "domain": "default"
+          },
+          "doar,livr,quer": {
+            "intent": "DOAR-LIVRO",
+            "domain": "default"
+          },
+          "doar,livr,par,tenh": {
+            "intent": "DOAR-LIVRO",
+            "domain": "default"
+          },
+          "envi,livr,onde,os": {
+            "intent": "DOAR-LIVRO",
+            "domain": "default"
+          },
+          "busc,livr,meus,pod": {
+            "intent": "DOAR-LIVRO",
+            "domain": "default"
+          },
+          "livr": {
+            "intent": "DOAR-LIVRO",
+            "domain": "default"
+          },
+          "livret": {
+            "intent": "DOAR-LIVRO",
+            "domain": "default"
+          },
+          "libr": {
+            "intent": "DOAR-LIVRO",
+            "domain": "default"
+          },
+          "ajud,financeir": {
+            "intent": "DOAR-LIVRO",
+            "domain": "default"
+          },
+          "financeir": {
+            "intent": "DOAR-LIVRO",
+            "domain": "default"
+          },
+          "verdinh": {
+            "intent": "DOAR-LIVRO",
+            "domain": "default"
+          },
+          "cash": {
+            "intent": "DOAR-LIVRO",
+            "domain": "default"
+          },
+          "credit": {
+            "intent": "DOAR-LIVRO",
+            "domain": "default"
+          },
+          "donation": {
+            "intent": "DOAR-GENERICO",
+            "domain": "default"
+          },
+          "doaca,faz,quer,uma": {
+            "intent": "DOAR-GENERICO",
+            "domain": "default"
+          },
+          "ajud,quer": {
+            "intent": "DOAR-GENERICO",
+            "domain": "default"
+          },
+          "ajud,moviment,o": {
+            "intent": "DOAR-GENERICO",
+            "domain": "default"
+          },
+          "quer,ser,voluntari": {
+            "intent": "DOAR-GENERICO",
+            "domain": "default"
+          },
+          "com,doaca,faz,par": {
+            "intent": "DOAR-GENERICO",
+            "domain": "default"
+          },
+          "doaca": {
+            "intent": "DOAR-GENERICO",
+            "domain": "default"
+          },
+          "doar,quer": {
+            "intent": "DOAR-GENERICO",
+            "domain": "default"
+          },
+          "nao,obrig": {
+            "intent": "NAO",
+            "domain": "default"
+          },
+          "nops": {
+            "intent": "NAO",
+            "domain": "default"
+          },
+          "nao,val": {
+            "intent": "NAO",
+            "domain": "default"
+          },
+          "nao,precis": {
+            "intent": "NAO",
+            "domain": "default"
+          },
+          "isso,so": {
+            "intent": "NAO",
+            "domain": "default"
+          },
+          "e,enquant,isso,por": {
+            "intent": "NAO",
+            "domain": "default"
+          },
+          "ate,mais": {
+            "intent": "NAO",
+            "domain": "default"
+          },
+          "nao": {
+            "intent": "NAO",
+            "domain": "default"
+          },
+          "sim": {
+            "intent": "SIM",
+            "domain": "default"
+          },
+          "pod": {
+            "intent": "SIM",
+            "domain": "default"
+          },
+          "quer": {
+            "intent": "SIM",
+            "domain": "default"
+          },
+          "precis": {
+            "intent": "SIM",
+            "domain": "default"
+          },
+          "yes": {
+            "intent": "SIM",
+            "domain": "default"
+          }
+        },
+        "intentDict": {
+          "GERENTE": "default",
+          "DOAR-DINHEIRO": "default",
+          "DOAR-LIVRO": "default",
+          "DOAR-GENERICO": "default",
+          "NAO": "default",
+          "SIM": "default"
+        },
+        "sentences": [
+          {
+            "domain": "default",
+            "utterance": "falar com o gerente",
+            "intent": "GERENTE"
+          },
+          {
+            "domain": "default",
+            "utterance": "falar com humano",
+            "intent": "GERENTE"
+          },
+          {
+            "domain": "default",
+            "utterance": "chama uma pessoa",
+            "intent": "GERENTE"
+          },
+          {
+            "domain": "default",
+            "utterance": "preciso de ajuda",
+            "intent": "GERENTE"
+          },
+          {
+            "domain": "default",
+            "utterance": "quero falar com o gerente",
+            "intent": "GERENTE"
+          },
+          {
+            "domain": "default",
+            "utterance": "me passa o picpay",
+            "intent": "DOAR-DINHEIRO"
+          },
+          {
+            "domain": "default",
+            "utterance": "vocês tem pic pay?",
+            "intent": "DOAR-DINHEIRO"
+          },
+          {
+            "domain": "default",
+            "utterance": "me manda o qrcode",
+            "intent": "DOAR-DINHEIRO"
+          },
+          {
+            "domain": "default",
+            "utterance": "link da benfeitoria",
+            "intent": "DOAR-DINHEIRO"
+          },
+          {
+            "domain": "default",
+            "utterance": "como faço para doar dinheiro",
+            "intent": "DOAR-DINHEIRO"
+          },
+          {
+            "domain": "default",
+            "utterance": "quero doar dinheiro",
+            "intent": "DOAR-DINHEIRO"
+          },
+          {
+            "domain": "default",
+            "utterance": "picpay",
+            "intent": "DOAR-DINHEIRO"
+          },
+          {
+            "domain": "default",
+            "utterance": "dinheiros",
+            "intent": "DOAR-DINHEIRO"
+          },
+          {
+            "domain": "default",
+            "utterance": "dinheiro",
+            "intent": "DOAR-DINHEIRO"
+          },
+          {
+            "domain": "default",
+            "utterance": "quero doar livros",
+            "intent": "DOAR-LIVRO"
+          },
+          {
+            "domain": "default",
+            "utterance": "tenho livros para doar",
+            "intent": "DOAR-LIVRO"
+          },
+          {
+            "domain": "default",
+            "utterance": "onde envio os livros?",
+            "intent": "DOAR-LIVRO"
+          },
+          {
+            "domain": "default",
+            "utterance": "pode buscar meus livros",
+            "intent": "DOAR-LIVRO"
+          },
+          {
+            "domain": "default",
+            "utterance": "livros",
+            "intent": "DOAR-LIVRO"
+          },
+          {
+            "domain": "default",
+            "utterance": "livretos",
+            "intent": "DOAR-LIVRO"
+          },
+          {
+            "domain": "default",
+            "utterance": "libros",
+            "intent": "DOAR-LIVRO"
+          },
+          {
+            "domain": "default",
+            "utterance": "ajuda financeira",
+            "intent": "DOAR-LIVRO"
+          },
+          {
+            "domain": "default",
+            "utterance": "financeiramente",
+            "intent": "DOAR-LIVRO"
+          },
+          {
+            "domain": "default",
+            "utterance": "financeiro",
+            "intent": "DOAR-LIVRO"
+          },
+          {
+            "domain": "default",
+            "utterance": "verdinhas",
+            "intent": "DOAR-LIVRO"
+          },
+          {
+            "domain": "default",
+            "utterance": "cash",
+            "intent": "DOAR-LIVRO"
+          },
+          {
+            "domain": "default",
+            "utterance": "crédito",
+            "intent": "DOAR-LIVRO"
+          },
+          {
+            "domain": "default",
+            "utterance": "donation",
+            "intent": "DOAR-GENERICO"
+          },
+          {
+            "domain": "default",
+            "utterance": "quero fazer uma doação",
+            "intent": "DOAR-GENERICO"
+          },
+          {
+            "domain": "default",
+            "utterance": "quero ajudar",
+            "intent": "DOAR-GENERICO"
+          },
+          {
+            "domain": "default",
+            "utterance": "ajudar o movimento",
+            "intent": "DOAR-GENERICO"
+          },
+          {
+            "domain": "default",
+            "utterance": "quero ser voluntario",
+            "intent": "DOAR-GENERICO"
+          },
+          {
+            "domain": "default",
+            "utterance": "como faz para fazer doação",
+            "intent": "DOAR-GENERICO"
+          },
+          {
+            "domain": "default",
+            "utterance": "doação",
+            "intent": "DOAR-GENERICO"
+          },
+          {
+            "domain": "default",
+            "utterance": "quero doar",
+            "intent": "DOAR-GENERICO"
+          },
+          {
+            "domain": "default",
+            "utterance": "não obrigado",
+            "intent": "NAO"
+          },
+          {
+            "domain": "default",
+            "utterance": "nops",
+            "intent": "NAO"
+          },
+          {
+            "domain": "default",
+            "utterance": "não valeu",
+            "intent": "NAO"
+          },
+          {
+            "domain": "default",
+            "utterance": "não preciso não",
+            "intent": "NAO"
+          },
+          {
+            "domain": "default",
+            "utterance": "só isso",
+            "intent": "NAO"
+          },
+          {
+            "domain": "default",
+            "utterance": "por enquanto é isso",
+            "intent": "NAO"
+          },
+          {
+            "domain": "default",
+            "utterance": "até mais",
+            "intent": "NAO"
+          },
+          {
+            "domain": "default",
+            "utterance": "não",
+            "intent": "NAO"
+          },
+          {
+            "domain": "default",
+            "utterance": "sim",
+            "intent": "SIM"
+          },
+          {
+            "domain": "default",
+            "utterance": "pode",
+            "intent": "SIM"
+          },
+          {
+            "domain": "default",
+            "utterance": "quero",
+            "intent": "SIM"
+          },
+          {
+            "domain": "default",
+            "utterance": "preciso",
+            "intent": "SIM"
+          },
+          {
+            "domain": "default",
+            "utterance": "yes",
+            "intent": "SIM"
+          }
+        ],
+        "domains": {
+          "master_domain": {
+            "settings": {
+              "locale": "pt",
+              "tag": "nlu-pt",
+              "keepStopwords": true,
+              "nonefeatureValue": 1,
+              "nonedeltaMultiplier": 1.2,
+              "spellCheck": false,
+              "spellCheckDistance": 1,
+              "filterZeros": true,
+              "log": true
+            },
+            "features": {
+              "fal": 1,
+              "com": 1,
+              "o": 1,
+              "gerent": 1,
+              "human": 1,
+              "cham": 1,
+              "uma": 1,
+              "pesso": 1,
+              "precis": 1,
+              "de": 1,
+              "ajud": 1,
+              "quer": 1,
+              "me": 1,
+              "pass": 1,
+              "picpay": 1,
+              "voc": 1,
+              "tem": 1,
+              "pic": 1,
+              "pay": 1,
+              "mand": 1,
+              "qrcod": 1,
+              "link": 1,
+              "da": 1,
+              "benfeitor": 1,
+              "fac": 1,
+              "par": 1,
+              "doar": 1,
+              "dinheir": 1,
+              "livr": 1,
+              "tenh": 1,
+              "onde": 1,
+              "envi": 1,
+              "os": 1,
+              "pod": 1,
+              "busc": 1,
+              "meus": 1,
+              "livret": 1,
+              "libr": 1,
+              "financeir": 1,
+              "verdinh": 1,
+              "cash": 1,
+              "credit": 1,
+              "donation": 1,
+              "faz": 1,
+              "doaca": 1,
+              "moviment": 1,
+              "ser": 1,
+              "voluntari": 1,
+              "nao": 1,
+              "obrig": 1,
+              "nops": 1,
+              "val": 1,
+              "so": 1,
+              "isso": 1,
+              "por": 1,
+              "enquant": 1,
+              "e": 1,
+              "ate": 1,
+              "mais": 1,
+              "sim": 1,
+              "yes": 1
+            },
+            "intents": {
+              "GERENTE": 1,
+              "DOAR-DINHEIRO": 1,
+              "DOAR-LIVRO": 1,
+              "DOAR-GENERICO": 1,
+              "NAO": 1,
+              "SIM": 1
+            },
+            "intentFeatures": {
+              "GERENTE": [
+                "fal",
+                "com",
+                "o",
+                "gerent",
+                "human",
+                "cham",
+                "uma",
+                "pesso",
+                "precis",
+                "de",
+                "ajud",
+                "quer"
+              ],
+              "DOAR-DINHEIRO": [
+                "me",
+                "pass",
+                "o",
+                "picpay",
+                "voc",
+                "tem",
+                "pic",
+                "pay",
+                "mand",
+                "qrcod",
+                "link",
+                "da",
+                "benfeitor",
+                "com",
+                "fac",
+                "par",
+                "doar",
+                "dinheir",
+                "quer"
+              ],
+              "DOAR-LIVRO": [
+                "quer",
+                "doar",
+                "livr",
+                "tenh",
+                "par",
+                "onde",
+                "envi",
+                "os",
+                "pod",
+                "busc",
+                "meus",
+                "livret",
+                "libr",
+                "ajud",
+                "financeir",
+                "verdinh",
+                "cash",
+                "credit"
+              ],
+              "DOAR-GENERICO": [
+                "donation",
+                "quer",
+                "faz",
+                "uma",
+                "doaca",
+                "ajud",
+                "o",
+                "moviment",
+                "ser",
+                "voluntari",
+                "com",
+                "par",
+                "doar"
+              ],
+              "NAO": [
+                "nao",
+                "obrig",
+                "nops",
+                "val",
+                "precis",
+                "so",
+                "isso",
+                "por",
+                "enquant",
+                "e",
+                "ate",
+                "mais"
+              ],
+              "SIM": [
+                "sim",
+                "pod",
+                "quer",
+                "precis",
+                "yes"
+              ]
+            },
+            "featuresToIntent": {
+              "fal": [
+                "GERENTE"
+              ],
+              "com": [
+                "GERENTE",
+                "DOAR-DINHEIRO",
+                "DOAR-GENERICO"
+              ],
+              "o": [
+                "GERENTE",
+                "DOAR-DINHEIRO",
+                "DOAR-GENERICO"
+              ],
+              "gerent": [
+                "GERENTE"
+              ],
+              "human": [
+                "GERENTE"
+              ],
+              "cham": [
+                "GERENTE"
+              ],
+              "uma": [
+                "GERENTE",
+                "DOAR-GENERICO"
+              ],
+              "pesso": [
+                "GERENTE"
+              ],
+              "precis": [
+                "GERENTE",
+                "NAO",
+                "SIM"
+              ],
+              "de": [
+                "GERENTE"
+              ],
+              "ajud": [
+                "GERENTE",
+                "DOAR-LIVRO",
+                "DOAR-GENERICO"
+              ],
+              "quer": [
+                "GERENTE",
+                "DOAR-DINHEIRO",
+                "DOAR-LIVRO",
+                "DOAR-GENERICO",
+                "SIM"
+              ],
+              "me": [
+                "DOAR-DINHEIRO"
+              ],
+              "pass": [
+                "DOAR-DINHEIRO"
+              ],
+              "picpay": [
+                "DOAR-DINHEIRO"
+              ],
+              "voc": [
+                "DOAR-DINHEIRO"
+              ],
+              "tem": [
+                "DOAR-DINHEIRO"
+              ],
+              "pic": [
+                "DOAR-DINHEIRO"
+              ],
+              "pay": [
+                "DOAR-DINHEIRO"
+              ],
+              "mand": [
+                "DOAR-DINHEIRO"
+              ],
+              "qrcod": [
+                "DOAR-DINHEIRO"
+              ],
+              "link": [
+                "DOAR-DINHEIRO"
+              ],
+              "da": [
+                "DOAR-DINHEIRO"
+              ],
+              "benfeitor": [
+                "DOAR-DINHEIRO"
+              ],
+              "fac": [
+                "DOAR-DINHEIRO"
+              ],
+              "par": [
+                "DOAR-DINHEIRO",
+                "DOAR-LIVRO",
+                "DOAR-GENERICO"
+              ],
+              "doar": [
+                "DOAR-DINHEIRO",
+                "DOAR-LIVRO",
+                "DOAR-GENERICO"
+              ],
+              "dinheir": [
+                "DOAR-DINHEIRO"
+              ],
+              "livr": [
+                "DOAR-LIVRO"
+              ],
+              "tenh": [
+                "DOAR-LIVRO"
+              ],
+              "onde": [
+                "DOAR-LIVRO"
+              ],
+              "envi": [
+                "DOAR-LIVRO"
+              ],
+              "os": [
+                "DOAR-LIVRO"
+              ],
+              "pod": [
+                "DOAR-LIVRO",
+                "SIM"
+              ],
+              "busc": [
+                "DOAR-LIVRO"
+              ],
+              "meus": [
+                "DOAR-LIVRO"
+              ],
+              "livret": [
+                "DOAR-LIVRO"
+              ],
+              "libr": [
+                "DOAR-LIVRO"
+              ],
+              "financeir": [
+                "DOAR-LIVRO"
+              ],
+              "verdinh": [
+                "DOAR-LIVRO"
+              ],
+              "cash": [
+                "DOAR-LIVRO"
+              ],
+              "credit": [
+                "DOAR-LIVRO"
+              ],
+              "donation": [
+                "DOAR-GENERICO"
+              ],
+              "faz": [
+                "DOAR-GENERICO"
+              ],
+              "doaca": [
+                "DOAR-GENERICO"
+              ],
+              "moviment": [
+                "DOAR-GENERICO"
+              ],
+              "ser": [
+                "DOAR-GENERICO"
+              ],
+              "voluntari": [
+                "DOAR-GENERICO"
+              ],
+              "nao": [
+                "NAO"
+              ],
+              "obrig": [
+                "NAO"
+              ],
+              "nops": [
+                "NAO"
+              ],
+              "val": [
+                "NAO"
+              ],
+              "so": [
+                "NAO"
+              ],
+              "isso": [
+                "NAO"
+              ],
+              "por": [
+                "NAO"
+              ],
+              "enquant": [
+                "NAO"
+              ],
+              "e": [
+                "NAO"
+              ],
+              "ate": [
+                "NAO"
+              ],
+              "mais": [
+                "NAO"
+              ],
+              "sim": [
+                "SIM"
+              ],
+              "yes": [
+                "SIM"
+              ]
+            },
+            "neuralNetwork": {
+              "features": [
+                "fal",
+                "com",
+                "o",
+                "gerent",
+                "human",
+                "cham",
+                "uma",
+                "pesso",
+                "precis",
+                "de",
+                "ajud",
+                "quer",
+                "me",
+                "pass",
+                "picpay",
+                "voc",
+                "tem",
+                "pic",
+                "pay",
+                "mand",
+                "qrcod",
+                "link",
+                "da",
+                "benfeitor",
+                "fac",
+                "par",
+                "doar",
+                "dinheir",
+                "livr",
+                "tenh",
+                "onde",
+                "envi",
+                "os",
+                "pod",
+                "busc",
+                "meus",
+                "livret",
+                "libr",
+                "financeir",
+                "verdinh",
+                "cash",
+                "credit",
+                "donation",
+                "faz",
+                "doaca",
+                "moviment",
+                "ser",
+                "voluntari",
+                "nao",
+                "obrig",
+                "nops",
+                "val",
+                "so",
+                "isso",
+                "por",
+                "enquant",
+                "e",
+                "ate",
+                "mais",
+                "sim",
+                "yes",
+                "nonefeature"
+              ],
+              "intents": [
+                "GERENTE",
+                "DOAR-DINHEIRO",
+                "DOAR-LIVRO",
+                "DOAR-GENERICO",
+                "NAO",
+                "SIM",
+                "None"
+              ],
+              "perceptrons": [
+                [
+                  6.273061752319336,
+                  4.830682277679443,
+                  0.19721737504005432,
+                  3.0742053985595703,
+                  3.1988601684570312,
+                  5.014670372009277,
+                  4.268103122711182,
+                  5.014670372009277,
+                  1.8141300678253174,
+                  10.50048542022705,
+                  1.9603689908981323,
+                  -0.1212269589304924,
+                  -0.9516820311546326,
+                  -0.48773956298828125,
+                  -0.7600645422935486,
+                  -0.3293023407459259,
+                  -0.3293023407459259,
+                  -0.3293023407459259,
+                  -0.3293023407459259,
+                  -0.4639424979686737,
+                  -0.4639424979686737,
+                  -0.34270402789115906,
+                  -0.34270402789115906,
+                  -0.34270402789115906,
+                  -0.8149387836456299,
+                  -1.443992018699646,
+                  -1.196934461593628,
+                  -1.2876322269439697,
+                  -0.7320279479026794,
+                  -0.0016116196056827903,
+                  -0.18152868747711182,
+                  -0.18152868747711182,
+                  -0.18152868747711182,
+                  -0.16766755282878876,
+                  -0.16481664776802063,
+                  -0.16481664776802063,
+                  -0.42015427350997925,
+                  -0.40471261739730835,
+                  -1.767923355102539,
+                  -0.3377783000469208,
+                  -0.32512131333351135,
+                  -0.3128818869590759,
+                  -0.3010499179363251,
+                  -1.3740088939666748,
+                  -1.3740088939666748,
+                  -1.9253036975860596,
+                  -0.05306816101074219,
+                  -0.05306816101074219,
+                  -1.8723398447036743,
+                  -0.03657464310526848,
+                  -0.1426876336336136,
+                  -0.028801392763853073,
+                  -0.053462401032447815,
+                  -0.0865720808506012,
+                  -0.03310968354344368,
+                  -0.03310968354344368,
+                  -0.03310968354344368,
+                  -0.059709761291742325,
+                  -0.059709761291742325,
+                  -0.07583525031805038,
+                  -0.016512449830770493,
+                  -0.015735480934381485,
+                  -1.7988548573747045
+                ],
+                [
+                  -1.3165409564971924,
+                  -0.9571124911308289,
+                  0.11116160452365875,
+                  -1.134244441986084,
+                  -0.18229642510414124,
+                  -0.29898977279663086,
+                  -0.5780944228172302,
+                  -0.29898977279663086,
+                  -1.16400146484375,
+                  0,
+                  -1.8538331985473633,
+                  -0.9202677011489868,
+                  2.3692636489868164,
+                  -2.381479501724243,
+                  11.916971206665039,
+                  2.9971203804016113,
+                  2.9971203804016113,
+                  2.9971203804016113,
+                  2.9971203804016113,
+                  4.750741004943848,
+                  4.750741004943848,
+                  3.9942760467529297,
+                  3.9942760467529297,
+                  3.9942760467529297,
+                  0.9753295183181763,
+                  -0.6938911080360413,
+                  0.609876275062561,
+                  12.072510719299316,
+                  -3.0775461196899414,
+                  -1.0533196926116943,
+                  -0.29301580786705017,
+                  -0.29301580786705017,
+                  -0.29301580786705017,
+                  -1.1704453229904175,
+                  -0.22879987955093384,
+                  -0.22879987955093384,
+                  -1.2900646924972534,
+                  -1.271000862121582,
+                  -1.685166835784912,
+                  -1.245699405670166,
+                  -1.2377657890319824,
+                  -1.2315086126327515,
+                  -1.2261967658996582,
+                  -0.8950046896934509,
+                  -1.3009121417999268,
+                  -1.1238577365875244,
+                  -0.42622968554496765,
+                  -0.42622968554496765,
+                  -1.1905921697616577,
+                  -0.3345174491405487,
+                  -1.1783113479614258,
+                  -0.27473703026771545,
+                  -0.4870268702507019,
+                  -0.7160536050796509,
+                  -0.22902697324752808,
+                  -0.22902697324752808,
+                  -0.22902697324752808,
+                  -0.6005687117576599,
+                  -0.6005687117576599,
+                  -1.1710630655288696,
+                  -1.1582952737808228,
+                  -1.1547060012817383,
+                  0.5006496974548865
+                ],
+                [
+                  -0.6761924624443054,
+                  -2.045534133911133,
+                  -2.103302478790283,
+                  -0.07670799642801285,
+                  -0.5994844436645508,
+                  -0.875517725944519,
+                  -1.5694580078125,
+                  -0.875517725944519,
+                  -3.2769992351531982,
+                  -0.33908143639564514,
+                  0.050170134752988815,
+                  -2.815345048904419,
+                  -0.5059260129928589,
+                  -0.14939028024673462,
+                  -3.218195676803589,
+                  -0.8306599259376526,
+                  -0.8306599259376526,
+                  -0.8306599259376526,
+                  -0.8306599259376526,
+                  -0.3565358817577362,
+                  -0.3565358817577362,
+                  -1.1063151359558105,
+                  -1.1063151359558105,
+                  -1.1063151359558105,
+                  -0.6740756034851074,
+                  -1.7385538816452026,
+                  1.332208514213562,
+                  -3.285857677459717,
+                  11.044964790344238,
+                  -0.36920902132987976,
+                  -0.2584552466869354,
+                  -0.2584552466869354,
+                  -0.2584552466869354,
+                  -3.160552501678467,
+                  1.186902403831482,
+                  1.186902403831482,
+                  10.286788940429688,
+                  10.282015800476074,
+                  10.321122169494629,
+                  10.27228832244873,
+                  10.26719856262207,
+                  10.26180648803711,
+                  -3.4787909984588623,
+                  -1.3892089128494263,
+                  -3.5108132362365723,
+                  -1.52066969871521,
+                  -0.7950921058654785,
+                  -0.7950921058654785,
+                  -3.4053127765655518,
+                  -0.9451578259468079,
+                  -3.3299646377563477,
+                  -0.7823948860168457,
+                  -1.4385541677474976,
+                  -2.0759291648864746,
+                  -0.6373754143714905,
+                  -0.6373754143714905,
+                  -0.6373754143714905,
+                  -1.7411693334579468,
+                  -1.7411693334579468,
+                  -3.2964861392974854,
+                  -3.2474236488342285,
+                  -3.235124349594116,
+                  2.118477462762266
+                ],
+                [
+                  -2.641094207763672,
+                  -1.403652548789978,
+                  -0.8706322312355042,
+                  -2.4460031986236572,
+                  -0.19509096443653107,
+                  -0.8391852974891663,
+                  -1.9060730934143066,
+                  -0.8391852974891663,
+                  -5.604828834533691,
+                  -5.04457426071167,
+                  11.634490013122559,
+                  1.5050629377365112,
+                  -1.137701392173767,
+                  -0.5327351689338684,
+                  -0.9496680498123169,
+                  -0.2969713509082794,
+                  -0.2969713509082794,
+                  -0.2969713509082794,
+                  -0.2969713509082794,
+                  -0.6049662232398987,
+                  -0.6049662232398987,
+                  -0.3867127001285553,
+                  -0.3867127001285553,
+                  -0.3867127001285553,
+                  -0.32402294874191284,
+                  0.9802939891815186,
+                  11.586870193481445,
+                  -12.063398361206055,
+                  -12.045166969299316,
+                  -0.25714948773384094,
+                  0,
+                  0,
+                  0,
+                  -1.398427963256836,
+                  0,
+                  0,
+                  -0.7873914837837219,
+                  -0.7781279683113098,
+                  -10.573460578918457,
+                  -0.6853233575820923,
+                  -0.6777146458625793,
+                  -0.6701804399490356,
+                  13.386301040649414,
+                  0.4945778548717499,
+                  13.366842269897461,
+                  2.7130730152130127,
+                  5.93836784362793,
+                  5.93836784362793,
+                  -1.7220628261566162,
+                  -0.5495564937591553,
+                  -1.471951961517334,
+                  -0.45016101002693176,
+                  -0.7013012170791626,
+                  -1.081493616104126,
+                  -0.3801925480365753,
+                  -0.3801925480365753,
+                  -0.3801925480365753,
+                  -0.8463088274002075,
+                  -0.8463088274002075,
+                  -1.4180197715759277,
+                  -1.1088142395019531,
+                  -1.095155954360962,
+                  -0.937358108440829
+                ],
+                [
+                  -0.7594707608222961,
+                  -0.891730785369873,
+                  -0.8989017605781555,
+                  -0.3576211631298065,
+                  -0.4018496870994568,
+                  -0.6108781099319458,
+                  -0.6108781099319458,
+                  -0.6108781099319458,
+                  -0.3840979337692261,
+                  -0.8206251263618469,
+                  -0.9793235659599304,
+                  -1.5904872417449951,
+                  -0.5412805080413818,
+                  -0.28052079677581787,
+                  -1.3857851028442383,
+                  -0.470274418592453,
+                  -0.470274418592453,
+                  -0.470274418592453,
+                  -0.470274418592453,
+                  -0.26075971126556396,
+                  -0.26075971126556396,
+                  -0.5774738192558289,
+                  -0.5774738192558289,
+                  -0.5774738192558289,
+                  -0.1322600394487381,
+                  -0.3042108416557312,
+                  -0.5217109322547913,
+                  -1.5294777154922485,
+                  -1.399401307106018,
+                  -0.1719508171081543,
+                  -0.2755964398384094,
+                  -0.2755964398384094,
+                  -0.2755964398384094,
+                  -1.5740303993225098,
+                  -0.09295612573623657,
+                  -0.09295612573623657,
+                  -1.3311967849731445,
+                  -1.3203903436660767,
+                  -1.4151256084442139,
+                  -1.3043053150177002,
+                  -1.2953051328659058,
+                  -1.286914348602295,
+                  -1.2790166139602661,
+                  0,
+                  -1.2714430093765259,
+                  0,
+                  -0.028340548276901245,
+                  -0.028340548276901245,
+                  12.112257957458496,
+                  -0.175082266330719,
+                  11.902289390563965,
+                  -0.17609627544879913,
+                  5.10418176651001,
+                  6.809005260467529,
+                  1.704817771911621,
+                  1.704817771911621,
+                  1.704817771911621,
+                  5.954437255859375,
+                  5.954437255859375,
+                  -1.5797474384307861,
+                  -1.4198007583618164,
+                  -1.4012411832809448,
+                  0.5555331931870492
+                ],
+                [
+                  -3.0998218059539795,
+                  -3.18845534324646,
+                  -3.2737348079681396,
+                  -2.6343445777893066,
+                  -0.46547865867614746,
+                  -0.7595492005348206,
+                  -4.334230422973633,
+                  -0.7595492005348206,
+                  9.399670600891113,
+                  -3.0458269119262695,
+                  -12.121317863464355,
+                  9.139988899230957,
+                  -0.6393918991088867,
+                  -0.29216018319129944,
+                  -3.0699892044067383,
+                  -0.768133282661438,
+                  -0.768133282661438,
+                  -0.768133282661438,
+                  -0.768133282661438,
+                  -0.34723177552223206,
+                  -0.34723177552223206,
+                  -1.024092674255371,
+                  -1.024092674255371,
+                  -1.024092674255371,
+                  -0.08863383531570435,
+                  -0.1360418051481247,
+                  -12.100605010986328,
+                  -3.0714986324310303,
+                  -4.939985275268555,
+                  -0.047407977283000946,
+                  -0.20935671031475067,
+                  -0.20935671031475067,
+                  -0.20935671031475067,
+                  9.451228141784668,
+                  -3.8743183612823486,
+                  -3.8743183612823486,
+                  -3.0696017742156982,
+                  -3.069387912750244,
+                  -3.070976734161377,
+                  -3.068979263305664,
+                  -3.0687530040740967,
+                  -3.0685222148895264,
+                  -3.068286418914795,
+                  -3.5746891498565674,
+                  -4.2788262367248535,
+                  0,
+                  -6.080369472503662,
+                  -6.080369472503662,
+                  -12.438031196594238,
+                  -0.17565330862998962,
+                  -3.052058458328247,
+                  -0.13671241700649261,
+                  -1.309072494506836,
+                  -1.7460575103759766,
+                  -0.4369840919971466,
+                  -0.4369840919971466,
+                  -0.4369840919971466,
+                  -1.5272101163864136,
+                  -1.5272101163864136,
+                  9.450648307800293,
+                  9.428204536437988,
+                  -3.0715527534484863,
+                  3.0740133229719167
+                ],
+                [
+                  -0.24167999625205994,
+                  -0.2742360234260559,
+                  -0.2834993898868561,
+                  -0.10195176303386688,
+                  -0.13972821831703186,
+                  -0.21162012219429016,
+                  -0.21489019691944122,
+                  -0.21162012219429016,
+                  -0.5282405018806458,
+                  -0.17638084292411804,
+                  -0.24582625925540924,
+                  -0.5282408595085144,
+                  -0.177713081240654,
+                  -0.08065121620893478,
+                  -0.5421009659767151,
+                  -0.16229994595050812,
+                  -0.16229994595050812,
+                  -0.16229994595050812,
+                  -0.16229994595050812,
+                  -0.09706190228462219,
+                  -0.09706190228462219,
+                  -0.2090422809123993,
+                  -0.2090422809123993,
+                  -0.2090422809123993,
+                  -0.03255607560276985,
+                  -0.0730689987540245,
+                  -0.18787045776844025,
+                  -0.5824095010757446,
+                  -0.5450021028518677,
+                  -0.04051292687654495,
+                  -0.08343721926212311,
+                  -0.08343721926212311,
+                  -0.08343721926212311,
+                  -0.528240978717804,
+                  -0.07008302211761475,
+                  -0.07008302211761475,
+                  -0.532950758934021,
+                  -0.5312845706939697,
+                  -0.5514758825302124,
+                  -0.529629111289978,
+                  -0.52897709608078,
+                  -0.528588056564331,
+                  -0.5283793807029724,
+                  -0.0032700670417398214,
+                  -0.5282822847366333,
+                  -0.003834784496575594,
+                  -0.09565357863903046,
+                  -0.09565357863903046,
+                  -0.5282458066940308,
+                  -0.12687364220619202,
+                  -0.5282485485076904,
+                  -0.10908190160989761,
+                  -0.22500473260879517,
+                  -0.303829163312912,
+                  -0.07882468402385712,
+                  -0.07882468402385712,
+                  -0.07882468402385712,
+                  -0.26439809799194336,
+                  -0.26439809799194336,
+                  -0.5282413959503174,
+                  -0.5282400250434875,
+                  11.971750259399414,
+                  0.5282421056682757
+                ]
+              ],
+              "perceptronSettings": {
+                "locale": "pt",
+                "tag": "nlu-pt",
+                "keepStopwords": true,
+                "nonefeatureValue": 1,
+                "nonedeltaMultiplier": 1.2,
+                "spellCheck": false,
+                "spellCheckDistance": 1,
+                "filterZeros": true,
+                "log": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "intentDomains": {},
+    "extraSentences": [
+      [
+        "pt",
+        "falar com o gerente"
+      ],
+      [
+        "pt",
+        "falar com humano"
+      ],
+      [
+        "pt",
+        "chama uma pessoa"
+      ],
+      [
+        "pt",
+        "preciso de ajuda"
+      ],
+      [
+        "pt",
+        "quero falar com o gerente"
+      ],
+      [
+        "pt",
+        "me passa o picpay"
+      ],
+      [
+        "pt",
+        "vocês tem pic pay?"
+      ],
+      [
+        "pt",
+        "me manda o qrcode"
+      ],
+      [
+        "pt",
+        "link da benfeitoria"
+      ],
+      [
+        "pt",
+        "como faço para doar dinheiro"
+      ],
+      [
+        "pt",
+        "quero doar dinheiro"
+      ],
+      [
+        "pt",
+        "picpay"
+      ],
+      [
+        "pt",
+        "dinheiros"
+      ],
+      [
+        "pt",
+        "dinheiro"
+      ],
+      [
+        "pt",
+        "quero doar livros"
+      ],
+      [
+        "pt",
+        "tenho livros para doar"
+      ],
+      [
+        "pt",
+        "onde envio os livros?"
+      ],
+      [
+        "pt",
+        "pode buscar meus livros"
+      ],
+      [
+        "pt",
+        "livros"
+      ],
+      [
+        "pt",
+        "livretos"
+      ],
+      [
+        "pt",
+        "libros"
+      ],
+      [
+        "pt",
+        "ajuda financeira"
+      ],
+      [
+        "pt",
+        "financeiramente"
+      ],
+      [
+        "pt",
+        "financeiro"
+      ],
+      [
+        "pt",
+        "verdinhas"
+      ],
+      [
+        "pt",
+        "cash"
+      ],
+      [
+        "pt",
+        "crédito"
+      ],
+      [
+        "pt",
+        "donation"
+      ],
+      [
+        "pt",
+        "quero fazer uma doação"
+      ],
+      [
+        "pt",
+        "quero ajudar"
+      ],
+      [
+        "pt",
+        "ajudar o movimento"
+      ],
+      [
+        "pt",
+        "quero ser voluntario"
+      ],
+      [
+        "pt",
+        "como faz para fazer doação"
+      ],
+      [
+        "pt",
+        "doação"
+      ],
+      [
+        "pt",
+        "quero doar"
+      ],
+      [
+        "pt",
+        "não obrigado"
+      ],
+      [
+        "pt",
+        "nops"
+      ],
+      [
+        "pt",
+        "não valeu"
+      ],
+      [
+        "pt",
+        "não preciso não"
+      ],
+      [
+        "pt",
+        "só isso"
+      ],
+      [
+        "pt",
+        "por enquanto é isso"
+      ],
+      [
+        "pt",
+        "até mais"
+      ],
+      [
+        "pt",
+        "não"
+      ],
+      [
+        "pt",
+        "sim"
+      ],
+      [
+        "pt",
+        "pode"
+      ],
+      [
+        "pt",
+        "quero"
+      ],
+      [
+        "pt",
+        "preciso"
+      ],
+      [
+        "pt",
+        "yes"
+      ]
+    ]
+  },
+  "ner": {
+    "settings": {
+      "tag": "ner",
+      "entityPreffix": "%",
+      "entitySuffix": "%"
+    },
+    "rules": {}
+  },
+  "nlgManager": {
+    "settings": {
+      "tag": "nlg-manager"
+    },
+    "responses": {}
+  },
+  "actionManager": {
+    "settings": {
+      "tag": "action-manager"
+    },
+    "actions": {}
+  },
+  "slotManager": {}
+}

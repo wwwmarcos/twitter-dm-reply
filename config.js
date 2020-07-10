@@ -12,6 +12,11 @@ const config = {
   TELEGRAM: {
     BOT_TOKEN: process.env.TELEGRAM_BOT_TOKEN,
     CHAT_ID: process.env.TELEGRAM_CHAT_ID
+  },
+  REDIS: {
+    port: process.env.REDIS_PORT,
+    host: process.env.REDIS_HOST,
+    password: process.env.REDIS_PASSWORD
   }
 }
 
